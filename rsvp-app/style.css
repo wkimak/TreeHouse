@@ -1,0 +1,103 @@
+*{
+	box-sizing: border-box;
+}
+
+
+html, body{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(120,111,81,0.6);
+}
+
+/* Header styling */
+
+.header-container{
+	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/73/c7/75/73c7755b172eaa9487622502cba00732.jpg");
+	background-repeat: no-repeat;
+	background-position-y: 40%; 
+	background-size: cover;
+	height: 45%;
+	width: 100%;
+	padding-top: 2%;
+	border-radius: 5%;
+}
+
+.header-container h1{
+	font-size: 3.0em;
+}
+
+.header-container h1, .header-container p{
+text-align: center;
+color: orange;
+letter-spacing: 0.4em;
+}
+
+/* form styling */
+
+form{
+	position: relative;
+	bottom: 3%;
+	text-align: center;
+}
+
+
+#input{
+	width: 50%;
+	height: 45px;
+	border-radius: 10%;
+    box-shadow: 30px 15px 40px;
+}
+
+form button{
+	width: 100px;
+	height: 45px;
+	background-color: orange;
+	border-radius: 10%;
+}
+
+/* Main section styling */
+.container{
+	background-color: rgba(255,255,255,0.1);
+    border: 1px solid orange;
+    border-radius: 5%;
+	height: 75%;
+	overflow: auto;
+	padding: 2% 5%;
+
+}
+
+.container h2{
+	font-size: 2.0em;
+	letter-spacing: 0.05em;
+}
+
+
+ul li{
+	background-color: rgba(255,255,255,0.3);
+	border: 1px groove black;
+	list-style: none;
+	padding: 1em;
+	margin: 5px;
+	width: 30%;
+	height: 150px;
+	display: inline-block;
+}
+
+li label{
+display: block;
+}
+
+
+li button{
+	display: inline;
+	margin-top: 40px;
+	margin-right: .4em;
+}
+
+
+/* checkbox event */
+
+.newClass{
+	border: 2px solid orange;
+}
+
