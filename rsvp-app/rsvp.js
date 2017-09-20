@@ -1,4 +1,4 @@
-ar form = document.getElementById("registrar");
+var form = document.getElementById("registrar");
 var input = document.getElementById("input");
 var ul = document.getElementById("invitedList");
 var removeBtn = document.querySelector("buttom");
