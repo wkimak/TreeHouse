@@ -3,6 +3,12 @@ $("document").ready(function(){
 $("#searchBtn").on("click", function(event){
 event.preventDefault();
 
+
+//animate form
+$("#form").css({"positon":"relative", "top": "1%"});
+
+
+
 //searchterm var declaration
 var searchTerm = $("#search").val();
 
