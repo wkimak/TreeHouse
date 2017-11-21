@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+}
+
+/* Main Container */
+.container{
+  width: 700px;
+  height: 400px;
+  background-color: rgba(0,0,0,0.3);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 100px;
+}
+
+/* Header (Title) styling */
+.header{
+  background-color: black;
+  height: 75px;
+  width: 100%;
+  color: white;
+  padding-top: 5px;
+}
+
+/* Header text */
+.header h2{
+  text-align: center;
+}
+
+/* Player container */
+.players{
+  background-color: pink;
+  height: 75px;
+  padding: 50px 20px;
+  border: 1px dashed white;
+}
+
+.name{
+  position: relative;
+  bottom: 15px;
+}
+
+
+
+/* Counter container (btns, score) */
+.counter{
+  width: 175px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  float: right;
+  position: relative;
+  bottom: 50px;
+}
+
+/* Score container */
+.score{
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  padding: 25px;
+}
+
+/* Buttons */
+.increment, .decrement{
+  height: 60px;
+  width: 50px;
+}
+
+/* -------- Add Player ------------- */
+
+.formContainer{
+  float: right;
+  margin-right: 50px;
+  position: relative;
+  bottom: 45px;
+}
+
+.addPlayerForm{
+  width: 100px;
+  height: 30px;
+}
+
+.addPlayerBtn{
+  position: relative;
+  bottom: 10px;
+}
+
+/* Remove Player button */
+.removeBtn{
+ position: relative;
+ bottom: 15px;
+}
+
+/* ----------- Stop Watch ----------- */
+.stopWatchContainer{
+  position: absolute;
+  top: 0px;
+  left: 78.5%;
+  float: right;
+  width: 150px;
+  height: 75px;
+  border: 1px solid pink;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.stopWatchScreen{
+  margin-bottom: 10px;
+   color: pink;
+}
