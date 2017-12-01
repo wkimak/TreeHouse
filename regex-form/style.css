@@ -15,15 +15,16 @@ h1{
 }
 
 #form{
+	position: relative;
+	top: 10%;
 	background-color: #fff;
-	width: 500px;
+	width: 40%;
 	height: 400px;
 	border-radius: 5px;
 	padding: 50px 50px;
-	position: absolute;
-	left: 30%;
-	top: 20%;
 	box-shadow: 30px 30px 50px;	
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -33,19 +34,19 @@ label{
 
 input{
 	display: block;
-	width: 375px;
-	height: 30px;
+	width: 100%;
+	height: 35px;
 	margin-bottom: 30px;
-	background-color: rgba(10,200,30,0.2);
+	background-color: rgba(49,125,97,0.5);
 }
 
 span{
-	background-color: rgb(10,10,210);
+	background-color: rgb(150,0,0);
 	color: white;
 	border-radius: 5px;
 	text-align: center;
 	width: 200px;
 	position: absolute;
-	left: 95%;
+	left: 92%;
 	visibility: hidden;
 }
