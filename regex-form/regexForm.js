@@ -7,7 +7,7 @@ var emailInput = document.getElementById("email");
 
 //username regex
 function isValidUsername (username){
-var regex = /^[a-z\s]+$/;
+var regex = /^$|^[a-z\s]+$/;
 var username = usernameInput.value;
 return regex.test(username);
 }
@@ -16,21 +16,21 @@ return regex.test(username);
 function isValidPassword (password){
 //Must contain a lowercase, uppercase letter and a number
 var password = passwordInput.value;
-return /[a-z]/.test(password) &&
-       /[A-Z]/.test(password) &&
-       /[0-9]/.test(password);
+return /^$|[a-z]/.test(password) &&
+       /^$|[A-Z]/.test(password) &&
+       /^$|[0-9]/.test(password);
 }
 
 //phone number regex
 function isValidNumber(number){
-var regex = /^\D*\d{3}\D*\d{3}\D*\d{4}\D*$/;
+var regex = /^$|^\D*\d{3}\D*\d{3}\D*\d{4}\D*$/;
 var number = phoneInput.value;
 return regex.test(number);
 }
 
 //email regex
 function isValidEmail(email){
-	var regex = /^[A-Za-z0-9]+@gmail\.com/;
+	var regex = /^$|^[A-Za-z0-9]+@gmail\.com/;
 	var email = emailInput.value;
 	return regex.test(email);
 }
@@ -46,11 +46,13 @@ function formatNumber(text){
 //username event handler
 usernameInput.addEventListener("input", function(){
 var span1 = document.getElementsByTagName("span")[0];
+
 if(isValidUsername(username) == false){
 span1.style.visibility = "visible";
 }else{
 span1.style.visibility = "hidden";	
 }
+console.log(usernameInput.value);
 });
 
 //password event handler
@@ -61,7 +63,6 @@ if(isValidPassword(password) == false){
 } else{
 	span2.style.visibility = "hidden";
 }
-
 });
 
 //phone number event handler
